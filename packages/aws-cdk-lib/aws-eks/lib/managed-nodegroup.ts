@@ -43,6 +43,10 @@ export enum NodegroupAmiType {
    */
   BOTTLEROCKET_X86_64 = 'BOTTLEROCKET_x86_64',
   /**
+   * Bottlerocket Nvidia(x86-64)
+   */
+  BOTTLEROCKET_x86_64_NVIDIA = 'BOTTLEROCKET_x86_64_NVIDIA',
+  /**
    * Windows Core 2019 (x86-64)
    */
   WINDOWS_CORE_2019_X86_64 = 'WINDOWS_CORE_2019_x86_64',
@@ -550,7 +554,7 @@ const x8664AmiTypes: NodegroupAmiType[] = [NodegroupAmiType.AL2_X86_64, Nodegrou
 const windowsAmiTypes: NodegroupAmiType[] = [NodegroupAmiType.WINDOWS_CORE_2019_X86_64,
   NodegroupAmiType.WINDOWS_CORE_2022_X86_64, NodegroupAmiType.WINDOWS_FULL_2019_X86_64,
   NodegroupAmiType.WINDOWS_FULL_2022_X86_64];
-const gpuAmiTypes: NodegroupAmiType[] = [NodegroupAmiType.AL2_X86_64_GPU];
+const gpuAmiTypes: NodegroupAmiType[] = [NodegroupAmiType.AL2_X86_64_GPU, NodegroupAmiType.BOTTLEROCKET_x86_64_NVIDIA];
 
 /**
  * This function check if the instanceType is GPU instance.
